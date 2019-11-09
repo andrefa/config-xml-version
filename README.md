@@ -1,34 +1,37 @@
 <h1 align="center">Welcome to config-xml-version 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/config-xml-version" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/config-xml-version.svg">
-  </a>
   <a href="https://github.com/andrefa/config-xml-version#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/andrefa/config-xml-version/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/andrefa/config-xml-version/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/andrefa/config-xml-version" />
-  </a>
 </p>
 
 > Cli tool for updating config.xml version
 
-### 🏠 [Homepage](https://github.com/andrefa/config-xml-version#readme)
-
 ## Install
 
 ```sh
-npm install
+npm install config-xml-version
 ```
 
 ## Usage
 
 ```sh
-npm run start
+npx config-xml-version
 ```
+
+###Command line arguments
+
+  * `--sourceFile` `-s` (default: `config.xml`): The source config.xml file
+
+  * `--destFile` `-d` (default: `config.xml`): The destiny config.xml file
+
+  * `--configXmlVersion` `-v` (default: `{package.json version field}`): The version to be applied
+
+  * `--help` `-h`: Displays help information
+
 
 ## Run tests
 
