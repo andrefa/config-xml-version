@@ -1,15 +1,28 @@
 {
   "name": "config-xml-version",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "Cli tool for updating config.xml version",
+  "keywords": [
+    "package.json",
+    "config.xml",
+    "semver",
+    "increment-version"
+  ],
+  "author": "Andre Almeida",
+  "license": "MIT",
+  "homepage": "https://github.com/andrefa/config-xml-version#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrefa/config-xml-version.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrefa/config-xml-version/issues"
+  },
   "scripts": {
     "prestart": "eslint --ignore-path .gitignore .",
     "start": "node src/cli.js",
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "xml2js": "0.4.22",
     "yargs": "14.2.0"
@@ -20,5 +33,10 @@
     "eslint-config-airbnb": "18.0.1",
     "eslint-plugin-import": "2.18.2",
     "mocha": "6.2.2"
-  }
+  },
+  "bin": {
+    "config-xml-version": "./src/cli.js"
+  },
+  "main": "./src/cli.js",
+  "preferGlobal": true
 }

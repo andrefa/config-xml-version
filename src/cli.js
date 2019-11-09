@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yargs = require('yargs')
 const path = require('path')
 const { run } = require('./config-xml-version')
