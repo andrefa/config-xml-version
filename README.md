@@ -22,7 +22,7 @@ npm install config-xml-version
 npx config-xml-version
 ```
 
-###Command line arguments
+### Command line arguments
 
   * `--sourceFile` `-s` (default: `config.xml`): The source config.xml file
 
